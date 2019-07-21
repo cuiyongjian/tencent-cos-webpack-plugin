@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix ./index.js",
-    "test": "mocha --require @babel/register --colors test/**/*.spec.js"
+    "test": "mocha --require @babel/register --colors test/**/*.spec.js",
+    "lint-ci": "eslint ./index.js",
+    "test-ci": "npm run test",
+    "gopkg": "echo \"test publish npm package\""
   },
   "husky": {
     "hooks": {

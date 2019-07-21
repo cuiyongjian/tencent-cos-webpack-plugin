@@ -1,3 +1,5 @@
+[![npm version](https://img.shields.io/npm/v/tencent-cos-webpack-plugin/latest.svg?style=flat-square)](https://www.npmjs.com/package/@limejs/core) [![downloads](https://img.shields.io/npm/dt/@limejs/core.svg?style=flat-square)](https://www.npmjs.com/package/@limejs/core) [![Build Status](https://img.shields.io/travis/limejs/lime.svg?style=flat-square)](https://travis-ci.com/limejs/lime) [![License](https://img.shields.io/npm/l/@limejs/core.svg?style=flat-square)](./License)
+
 # Tecent COS Webpack Plugin
 
 Upload the webpack build assets to Tencent COS, make it convinent to use CDN.
@@ -50,6 +52,15 @@ npm install # install dep
 ```
 
 * coding
+
+* lint & test
+
+write unit test and execute it
+
+```bash
+npm run lint
+npm run test
+```
 
 * put a pull request
 

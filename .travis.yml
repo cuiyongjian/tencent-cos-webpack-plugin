@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+  - "8"
+  - "9"
+  - "10"
+  - "12"
+os: linux
+cache:
+  npm: true
+  yarn: true
+branches:
+  only:
+    - master
+install: npm install
+script:
+  - npm run test-ci
+jobs:
+  include:
+    - stage: Lint
+      node_js: "node"
+      script: npm run lint-ci
+    - stage: npm release
+      node_js: "node"
+      env:
+        - NODE_ENV=production
+      install: npm install
+      script: npm run gopkg
