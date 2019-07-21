@@ -5,13 +5,19 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix ./index.js",
-    "test": "mocha --require @babel/register --colors ./test/**/*.spec.js"
+    "test": "mocha --require @babel/register --colors test/**/*.spec.js"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged && npm run test",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -43,6 +49,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "husky": "^3.0.1",
+    "lint-staged": "^9.2.0",
     "lodash.isregexp": "^4.0.1",
     "mocha": "^6.2.0",
     "ora": "^3.4.0"
