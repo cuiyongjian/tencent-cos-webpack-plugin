@@ -32,6 +32,8 @@
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/register": "^7.5.5",
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
     "chai": "^4.2.0",
     "cos-nodejs-sdk-v5": "^2.5.9",
     "eslint": "^6.1.0",
