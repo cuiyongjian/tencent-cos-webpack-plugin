@@ -1,0 +1,48 @@
+{
+  "name": "tencent-cos-webpack-plugin",
+  "version": "0.0.1",
+  "description": "tencent cos webpack plugin",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --fix ./index.js",
+    "test": "mocha --require @babel/register --colors ./test/**/*.spec.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm run test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuiyongjian/tencent-cos-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "tencent",
+    "cos"
+  ],
+  "author": "sheldoncui <websheldoncui@gmail.com> (https://www.cuiyongjian.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cuiyongjian/tencent-cos-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/cuiyongjian/tencent-cos-webpack-plugin#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "chai": "^4.2.0",
+    "cos-nodejs-sdk-v5": "^2.5.9",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^3.0.1",
+    "lodash.isregexp": "^4.0.1",
+    "mocha": "^6.2.0",
+    "ora": "^3.4.0"
+  }
+}
