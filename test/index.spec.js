@@ -6,7 +6,7 @@ const TencentCosWebpackPlugin = require('../index')
 describe('TencentCosWebpackPlugin 类型的测试', function () {
   const plugin = new TencentCosWebpackPlugin()
   it('new TencentCosWebpackPlugin() is a object', function () {
-    expect(plugin).to.be.an.instanceof(Function)
+    expect(plugin).to.be.an.instanceof(Object)
   })
   it('new TencentCosWebpackPlugin() is a instance of TencentCosWebpackPlugin', function () {
     expect(plugin).to.be.an.instanceof(TencentCosWebpackPlugin)
