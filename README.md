@@ -7,10 +7,10 @@ Upload the webpack build assets to Tencent COS, make it convinent to use CDN.
 ## Quick Start
 
 ```js
-// 引入
+// import TencentCosWebpackPlugin
 const TencentCosWebpackPlugin = require('tenent-cos-webpack-plugin');
 
-// 配置 Plugin
+// Instantiate the Plugin with your COS auth info
 const cosPlugin = new CosPlugin({
   secretId: 'my-secret-id', // usual use BucketName-APPID. refer: https://cloud.tencent.com/document/product/436/36119#.E7.AE.80.E5.8D.95.E4.B8.8A.E4.BC.A0.E5.AF.B9.E8.B1.A1
   secretKey: 'my-secret-key',
