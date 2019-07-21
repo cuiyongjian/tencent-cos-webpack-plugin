@@ -38,6 +38,10 @@
     "url": "https://github.com/cuiyongjian/tencent-cos-webpack-plugin/issues"
   },
   "homepage": "https://github.com/cuiyongjian/tencent-cos-webpack-plugin#readme",
+  "dependencies": {
+    "lodash.isregexp": "^4.0.1",
+    "ora": "^3.4.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/register": "^7.5.5",
@@ -53,8 +57,6 @@
     "eslint-plugin-standard": "^4.0.0",
     "husky": "^3.0.1",
     "lint-staged": "^9.2.0",
-    "lodash.isregexp": "^4.0.1",
-    "mocha": "^6.2.0",
-    "ora": "^3.4.0"
+    "mocha": "^6.2.0"
   }
 }
