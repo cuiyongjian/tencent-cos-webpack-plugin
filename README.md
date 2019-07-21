@@ -1,25 +1,28 @@
 # Tecent COS Webpack Plugin
 
+Upload the webpack build assets to Tencent COS, make it convinent to use CDN.
+
 ## Quick Start
 
 ```js
 // 引入
-const CosPlugin = require('cos-webpack');
+const TencentCosWebpackPlugin = require('tenent-cos-webpack-plugin');
 
 // 配置 Plugin
 const cosPlugin = new CosPlugin({
-  secretId: 'my-secret-id',
+  secretId: 'my-secret-id', // usual use BucketName-APPID. refer: https://cloud.tencent.com/document/product/436/36119#.E7.AE.80.E5.8D.95.E4.B8.8A.E4.BC.A0.E5.AF.B9.E8.B1.A1
   secretKey: 'my-secret-key',
   bucket: 'my-125000000',
   region: 'ap-chengdu',
-  path: '[hash]/'
+  path: '[hash]/' // COS dir
+  changeFileName: Function, // change the filename under COS path。
 });
 
-// Webpack 的配置
+// Webpack config
 module.exports = {
  output: {
-    // 此处为 COS 访问域名(bucket-1250000000.file.myqcloud.com) 加上 path([hash]/)
-    publicPath: "http://bucket-1250000000.file.myqcloud.com/[hash]/"
+    // your cos domain
+    publicPath: "http://www.abc.com"
     // ...
  },
  plugins: [
