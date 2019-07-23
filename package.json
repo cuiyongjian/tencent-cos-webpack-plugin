@@ -40,6 +40,7 @@
   "homepage": "https://github.com/cuiyongjian/tencent-cos-webpack-plugin#readme",
   "dependencies": {
     "lodash.isregexp": "^4.0.1",
+    "cos-nodejs-sdk-v5": "^2.5.9",
     "ora": "^3.4.0"
   },
   "devDependencies": {
@@ -48,7 +49,6 @@
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
     "chai": "^4.2.0",
-    "cos-nodejs-sdk-v5": "^2.5.9",
     "eslint": "^6.1.0",
     "eslint-config-standard": "^13.0.1",
     "eslint-plugin-import": "^2.18.2",
