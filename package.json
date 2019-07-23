@@ -1,6 +1,6 @@
 {
   "name": "tencent-cos-webpack-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "tencent cos webpack plugin",
   "main": "index.js",
   "scripts": {
