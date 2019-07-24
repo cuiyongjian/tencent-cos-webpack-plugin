@@ -41,6 +41,8 @@ const getReplacer = (value, allowEmpty) => {
 module.exports = class TencentCosWebpackPlugin {
   constructor (options) {
     this.options = Object.assign({}, options)
+    process.env.http_proxy = this.options.proxy || process.env.HTTP_RPOXY
+    process.env.https_proxy = this.options.proxy || process.env.HTTPS_PROXY
   }
 
   apply (compiler) {

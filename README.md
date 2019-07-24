@@ -16,8 +16,10 @@ const cosPlugin = new CosPlugin({
   secretKey: 'my-secret-key',
   bucket: 'my-125000000',
   region: 'ap-chengdu',
-  path: '[hash]/' // COS dir
+  path: 'xxx/' // the sub directory in the COS bucket, its default value is "[hash]/" which indicate the webpack build hash
   changeFileName: Function, // change the filename under COS path。
+  proxy: 'xxx.proxy.com' // your http/https proxy
+  exclude: /\.map$/ // which file to exclude
 });
 
 // Webpack config
